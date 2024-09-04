@@ -1,0 +1,179 @@
+﻿@{
+    ViewData["Title"] = "Contacts";
+}
+
+<style>
+    .contact_side {
+        width: 330px;
+        padding: 55px 40px;
+        background: #303030;
+    }
+
+    .cont_block:first-child {
+        padding-top: 0;
+    }
+
+    .cont_block {
+        padding: 15px 0;
+        border-bottom: 1px solid #676767;
+    }
+
+
+
+
+
+
+
+    .map {
+        position: absolute;
+        right: 35px; /* Отступ справа */
+        top: 75px; /* Верхний отступ */
+        bottom: 75px; /* Нижний отступ */
+        width: calc(60% - 35px); /* Учитываем отступ при расчете ширины */
+        height: calc(100% - 150px); /* Учитываем верхний и нижний отступы при расчете высоты */
+        box-sizing: border-box; /* Учитываем padding и border в общей ширине и высоте */
+    }
+
+
+    .contact-wrap {
+        background-color: white;
+    }
+    .mainbanner.pageheader {
+        height: 48vh;
+    }
+    .banner {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+        opacity: 0.5; /* Прозрачность видео */
+        background-color: #000; /* Цвет видео (темный) */
+    }
+    .banner_wrap {
+        position: absolute;
+        top: 40%;
+        width: 100%;
+        transform: translateY(-50%);
+        z-index: 1;
+    }
+    div {
+        display: block;
+        unicode-bidi: isolate;
+    }
+    .container {
+        margin-right: auto;
+        margin-left: auto;
+        padding-left: 15px;
+        padding-right: 15px;
+    }
+    .pageheader .banner_content {
+        width: 100%;
+    }
+    .pageheader .maintitle {
+        font-size: 34px;
+    }
+
+    .maintitle {
+        color: #FFFFFF;
+        font-weight: 700;
+        font-size: 54px;
+        margin-bottom: 15px;
+        line-height: 1.1;
+        font-family: 'ddt';
+        text-transform: uppercase;
+    }
+    .maintext {
+        color: #E9E9E9;
+        font-size: 24px;
+        line-height: 1.1;
+    }
+        .maintext p:last-child {
+            margin-bottom: 0;
+        }
+
+    p {
+        margin: 0 0 12.5px;
+    }
+</style>
+
+<!-- Content -->
+<section id="layout-content">
+    <div class="mainbanner pageheader">
+        <img src="~/images/Contacts.jpg" alt="" class="banner">
+        <div class="banner_wrap">
+            <div class="container">
+                <div class="banner_content">
+                    <div class="maintitle">КОНТАКТЫ</div>
+                    <div class="maintext"><p>Информация для связи</p></div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="contact-wrap">
+
+        <div class="container">
+            <div class="contact_side">
+                <div class="cont_block">
+                    Контакты
+                </div>
+                <div class="logocontact">
+                    <img src="/images/Logo.png" alt="Логотип" width="260" height="65">
+                </div>
+
+
+                <div class="cont_block contact-svg contact-address">
+                    <svg width="12" height="18" viewBox="0 0 12 18" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path fill-rule="evenodd" clip-rule="evenodd" d="M5.83333 0.666748C2.60833 0.666748 0 3.27508 0 6.50008C0 10.8751 5.83333 17.3334 5.83333 17.3334C5.83333 17.3334 11.6667 10.8751 11.6667 6.50008C11.6667 3.27508 9.05834 0.666748 5.83333 0.666748ZM5.83324 8.58345C4.68324 8.58345 3.74991 7.65011 3.74991 6.50011C3.74991 5.35012 4.68324 4.41678 5.83324 4.41678C6.98324 4.41678 7.91657 5.35012 7.91657 6.50011C7.91657 7.65011 6.98324 8.58345 5.83324 8.58345Z" fill="#AB2FDA" />
+                        <mask id="mask0" mask-type="alpha" maskUnits="userSpaceOnUse" x="0" y="0" width="12" height="18">
+                            <path fill-rule="evenodd" clip-rule="evenodd" d="M5.83333 0.666748C2.60833 0.666748 0 3.27508 0 6.50008C0 10.8751 5.83333 17.3334 5.83333 17.3334C5.83333 17.3334 11.6667 10.8751 11.6667 6.50008C11.6667 3.27508 9.05834 0.666748 5.83333 0.666748ZM5.83324 8.58345C4.68324 8.58345 3.74991 7.65011 3.74991 6.50011C3.74991 5.35012 4.68324 4.41678 5.83324 4.41678C6.98324 4.41678 7.91657 5.35012 7.91657 6.50011C7.91657 7.65011 6.98324 8.58345 5.83324 8.58345Z" fill="white" />
+                        </mask>
+                        <g mask="url(#mask0)">
+                            <rect x="-4.1665" y="-1" width="20" height="20" fill=" #AB2FDA" />
+                        </g>
+                    </svg>
+                    г. Астана, ул. Достык 18, БЦ Москва
+                </div>
+                <a href="tel:+7 7172 76 97 22" class="cont_block contact-svg contact-tel">
+                    <svg width="12" height="18" viewBox="0 0 12 18" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path fill-rule="evenodd" clip-rule="evenodd" d="M5.83333 0.666748C2.60833 0.666748 0 3.27508 0 6.50008C0 10.8751 5.83333 17.3334 5.83333 17.3334C5.83333 17.3334 11.6667 10.8751 11.6667 6.50008C11.6667 3.27508 9.05834 0.666748 5.83333 0.666748ZM5.83324 8.58345C4.68324 8.58345 3.74991 7.65011 3.74991 6.50011C3.74991 5.35012 4.68324 4.41678 5.83324 4.41678C6.98324 4.41678 7.91657 5.35012 7.91657 6.50011C7.91657 7.65011 6.98324 8.58345 5.83324 8.58345Z" fill="#AB2FDA" />
+                        <mask id="mask0" mask-type="alpha" maskUnits="userSpaceOnUse" x="0" y="0" width="12" height="18">
+                            <path fill-rule="evenodd" clip-rule="evenodd" d="M5.83333 0.666748C2.60833 0.666748 0 3.27508 0 6.50008C0 10.8751 5.83333 17.3334 5.83333 17.3334C5.83333 17.3334 11.6667 10.8751 11.6667 6.50008C11.6667 3.27508 9.05834 0.666748 5.83333 0.666748ZM5.83324 8.58345C4.68324 8.58345 3.74991 7.65011 3.74991 6.50011C3.74991 5.35012 4.68324 4.41678 5.83324 4.41678C6.98324 4.41678 7.91657 5.35012 7.91657 6.50011C7.91657 7.65011 6.98324 8.58345 5.83324 8.58345Z" fill="white" />
+                        </mask>
+                        <g mask="url(#mask0)">
+                            <rect x="-4.1665" y="-1" width="20" height="20" fill=" #AB2FDA" />
+                        </g>
+                    </svg>
+                    +7 701 516 46 00
+                </a>
+                <a href="mailto:info@apctrade.kz" class="cont_block contact-svg contact-email">
+                    <svg width="16" height="12" viewBox="0 0 16 12" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M15.9881 1.44673C15.9881 1.42845 16.0007 1.41065 15.9998 1.39258L11.1172 6.09728L15.994 10.6517C15.9969 10.6192 15.9881 10.5863 15.9881 10.5531V1.44673Z" fill=" #AB2FDA" />
+                        <path d="M10.3717 6.82129L8.3785 8.73904C8.27764 8.83608 8.14737 8.88474 8.01703 8.88474C7.8894 8.88474 7.76178 8.83816 7.66161 8.74481L5.67379 6.89247L0.765137 11.6239C0.884492 11.6667 1.01261 11.7 1.14677 11.7H14.8874C15.0866 11.7 15.2734 11.6394 15.4359 11.5489L10.3717 6.82129Z" fill="#AB2FDA" />
+                        <path d="M8.01169 7.64547L15.4633 0.467403C15.2946 0.367094 15.0982 0.299805 14.8877 0.299805H1.14713C0.873035 0.299805 0.621882 0.40623 0.42627 0.568545L8.01169 7.64547Z" fill=" #AB2FDA" />
+                        <path d="M0 1.62158V10.553C0 10.6555 0.0235652 10.7544 0.0491463 10.8488L4.8969 6.18058L0 1.62158Z" fill=" #AB2FDA" />
+                    </svg>
+                    info@apctrade.kz
+                </a>
+                <div class="cont_block contact-social">
+                    <a href="https://www.facebook.com/apctrade" target="_blank">
+                        <svg width="8" height="16" viewBox="0 0 8 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path fill-rule="evenodd" clip-rule="evenodd" d="M5.12806 15.6694H1.70878V8.28216H0V5.43542H1.70878V3.72772C1.70878 1.40703 2.6735 0.0253906 5.41457 0.0253906H7.69637V2.87213H6.27067C5.20332 2.87213 5.13234 3.26949 5.13234 4.01205L5.12806 5.43542H7.71262L7.40986 8.28216H5.12806V15.6694Z" fill="#AB2FDA" />
+                        </svg>
+                    </a>
+                    <a href="https://www.instagram.com/apctrade/" target="_blank">
+                        <svg width="17" height="16" viewBox="0 0 17 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path fill-rule="evenodd" clip-rule="evenodd" d="M11.8246 0.0253906H5.58988C3.05605 0.0253906 0.994629 2.11605 0.994629 4.68583V11.009C0.994629 13.5788 3.05605 15.6694 5.58988 15.6694H11.8246C14.3584 15.6694 16.4198 13.5788 16.4198 11.009V4.68583C16.4198 2.11605 14.3584 0.0253906 11.8246 0.0253906ZM14.8685 11.0095C14.8685 12.7143 13.5059 14.0963 11.8251 14.0963H5.59035C3.9095 14.0963 2.54688 12.7143 2.54688 11.0095V4.68619C2.54688 2.98141 3.9095 1.59944 5.59035 1.59944H11.8251C13.5059 1.59944 14.8685 2.98141 14.8685 4.68619V11.0095ZM4.71851 7.84784C4.71851 5.61679 6.50819 3.80166 8.70801 3.80166C10.9078 3.80166 12.6975 5.61676 12.6975 7.84784C12.6975 10.0789 10.9078 11.894 8.70801 11.894C6.50819 11.894 4.71851 10.0789 4.71851 7.84784ZM8.70726 10.3201C7.36093 10.3201 6.26953 9.21318 6.26953 7.84773C6.26953 6.48228 7.36096 5.37539 8.70726 5.37539C10.0536 5.37539 11.145 6.48228 11.145 7.84773C11.145 9.21315 10.0536 10.3201 8.70726 10.3201ZM13.6609 3.83195C13.6609 4.3673 13.2328 4.80128 12.7047 4.80128C12.1766 4.80128 11.7485 4.3673 11.7485 3.83195C11.7485 3.29661 12.1766 2.86262 12.7047 2.86262C13.2328 2.86262 13.6609 3.29661 13.6609 3.83195Z" fill="#AB2FDA" />
+                        </svg>
+                    </a>
+                </div>
+            </div>
+
+            <div class="map">
+                <a class="dg-widget-link" href="http://2gis.kz/nur_sultan/firm/70000001031427910/center/71.43417835235597,51.125222814323486/zoom/16?utm_medium=widget-source&utm_campaign=firmsonmap&utm_source=bigMap">Посмотреть на карте Астаны</a><div class="dg-widget-link"><a href="http://2gis.kz/nur_sultan/center/71.434461,51.124923/zoom/16/routeTab/rsType/bus/to/71.434461,51.124923╎APC Trade?utm_medium=widget-source&utm_campaign=firmsonmap&utm_source=route">Найти проезд до APC Trade</a></div>
+                <script charset="utf-8" src="https://widgets.2gis.com/js/DGWidgetLoader.js"></script>
+                <script charset="utf-8">new DGWidgetLoader({ "width": 640, "height": 600, "borderColor": "#a3a3a3", "pos": { "lat": 51.125222814323486, "lon": 71.43417835235597, "zoom": 16 }, "opt": { "city": "nur_sultan" }, "org": [{ "id": "70000001031427910" }] });</script><noscript style="color:#c00;font-size:16px;font-weight:bold;">Виджет карты использует JavaScript. Включите его в настройках вашего браузера.</noscript>
+            </div>
+
+        </div>
+
+    </div>
+</section>

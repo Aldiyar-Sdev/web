@@ -1,0 +1,166 @@
+﻿@{
+    ViewData["Title"] = "Obekty";
+}
+
+<style>
+    .about object{
+        height: calc(100vh - 0px);
+    }
+
+    .pagination > li > a,
+    .pagination > li > span {
+        position: relative;
+        float: left;
+        padding: 6px 12px;
+        line-height: 1.6;
+        text-decoration: none;
+        color: #AB2FDA;
+        background-color: #ffffff;
+        border: 1px solid #dddddd;
+        margin-left: -1px;
+    }
+
+        .pagination > li > a:hover,
+        .pagination > li > span:hover,
+        .pagination > li > a:focus,
+        .pagination > li > span:focus {
+            z-index: 2;
+            color: #AB2FDA;
+            background-color: #eeeeee;
+            border-color: #dddddd;
+        }
+
+    .pagination > .active > a,
+    .pagination > .active > span,
+    .pagination > .active > a:hover,
+    .pagination > .active > span:hover,
+    .pagination > .active > a:focus,
+    .pagination > .active > span:focus {
+        z-index: 3;
+        color: #ffffff;
+        background-color: #AB2FDA;
+        border-color: #960DB6;
+        cursor: default;
+    }
+</style>
+
+<!-- Content -->
+<section id="layout-content">
+    <div class="blogwrap">
+
+
+        <div class="about object">
+
+            <a href="@Url.Action("Kvartal", "Home")" class="about-item object-item">
+                <div class="about-img">
+
+                    <img data-src=""
+                         src="https://apctrade.kz/storage/app/uploads/public/608/689/cba/608689cba8e15977653605.jpg"
+                         alt=""
+                         style="max-width: 100%" />
+
+                </div>
+
+                <div class="about-content">
+                    <div class="about-name">ЖК Зеленый квартал</div>
+                    <div class="object-сity">Нур-Султан</div>
+                </div>
+            </a>
+            <a href="@Url.Action("Greenmall", "Home")" class="about-item object-item">
+                <div class="about-img">
+
+                    <img data-src=""
+                         src="https://apctrade.kz/storage/app/uploads/public/608/68d/8b3/60868d8b38892533964850.jpg"
+                         alt=""
+                         style="max-width: 100%" />
+
+                </div>
+
+                <div class="about-content">
+                    <div class="about-name">ТРЦ Green Mall</div>
+                    <div class="object-сity">Нур-Султан</div>
+                </div>
+            </a>
+            <a href="@Url.Action("Gostinica", "Home")" class="about-item object-item">
+                <div class="about-img">
+
+                    <img data-src=""
+                         src="https://apctrade.kz/storage/app/uploads/public/608/68e/112/60868e1129e3f076403081.jpg"
+                         alt=""
+                         style="max-width: 100%" />
+
+                </div>
+
+                <div class="about-content">
+                    <div class="about-name">Гостиница Акжелкен</div>
+                    <div class="object-сity">Бурабай</div>
+                </div>
+            </a>
+            <a href="@Url.Action("Gospital", "Home")" class="about-item object-item">
+                <div class="about-img">
+
+                    <img data-src=""
+                         src="https://apctrade.kz/storage/app/uploads/public/608/68e/29b/60868e29b5758346153640.jpg"
+                         alt=""
+                         style="max-width: 100%" />
+
+                </div>
+
+                <div class="about-content">
+                    <div class="about-name">Инфекционный госпиталь</div>
+                    <div class="object-сity">Петропавловск</div>
+                </div>
+            </a>
+            <a href="@Url.Action("Samruk", "Home")" class="about-item object-item">
+                <div class="about-img">
+
+                    <img data-src=""
+                         src="https://apctrade.kz/storage/app/uploads/public/608/68e/552/60868e5521e24274162740.jpg"
+                         alt=""
+                         style="max-width: 100%" />
+
+                </div>
+
+                <div class="about-content">
+                    <div class="about-name">
+                        АО Самрук-Казына
+                        (ТОО QazCloud)
+                    </div>
+                    <div class="object-сity">Нур-Султан</div>
+                </div>
+            </a>
+            <a href="@Url.Action("Pavlodar", "Home")" class="about-item object-item">
+                <div class="about-img">
+
+                    <img data-src=""
+                         src="https://apctrade.kz/storage/app/uploads/public/608/68e/7c5/60868e7c5882b488111144.jpg"
+                         alt=""
+                         style="max-width: 100%" />
+
+                </div>
+
+                <div class="about-content">
+                    <div class="about-name">Инфекционный госпиталь</div>
+                    <div class="object-сity">Павлодар</div>
+                </div>
+            </a>
+            <a href="@Url.Action("Kokshetau", "Home")" class="about-item object-item">
+                <div class="about-img">
+
+                    <img data-src=""
+                         src="https://apctrade.kz/storage/app/uploads/public/608/68e/c5d/60868ec5db46c605268643.jpg"
+                         alt=""
+                         style="max-width: 100%" />
+
+                </div>
+
+                <div class="about-content">
+                    <div class="about-name">Инфекционный госпиталь</div>
+                    <div class="object-сity">Кокшетау</div>
+                </div>
+            </a>
+
+        </div>
+
+    </div>
+</section>
